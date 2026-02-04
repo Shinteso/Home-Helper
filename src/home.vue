@@ -3,7 +3,9 @@
 </script>
 
 <template>
-<h1>Lemonade Stand Home Page</h1>
+  <h1>Home Page</h1>
+  <div>Happy time</div>
+
 </template>
 
 <style scoped>

@@ -21,7 +21,7 @@ const currentView = computed(() => {
 
 <template>
   <a href="#/">Home</a> |
-  <a href="#/about">About</a>
+  <a href="#/about">Macros</a>
 
   <component :is="currentView"></component>
 </template>

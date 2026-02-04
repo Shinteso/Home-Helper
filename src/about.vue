@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<h1>About placeholder</h1>
+<h1>Macro Tracker placeholder</h1>
 </template>
 
 <style scoped>
