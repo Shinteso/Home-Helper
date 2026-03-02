@@ -1,13 +1,13 @@
 <script setup>
 import { ref, computed } from 'vue'
 import home from './home.vue'
-import MacroHub from './macroHub.vue'
-import randTask from "@/randTask.vue";
+import macroHub from './macroHub.vue'
+import randTask from "./randTask.vue";
 
 const routes = {
   '/': home,
   '/macroHub': macroHub,
-  '/randTask' : randTask,
+  '/randTask' : randTask
 }
 
 const currentPath = ref(window.location.hash)
