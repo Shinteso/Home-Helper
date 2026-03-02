@@ -9,6 +9,7 @@ const routes = {
 }
 
 const currentPath = ref(window.location.hash)
+const drawer = ref(false)
 
 window.addEventListener('hashchange', ()=> {
   currentPath.value = window.location.hash
@@ -20,9 +21,50 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <a href="#/">Home</a> |
-  <a href="#/about">About</a>
-
-  <component :is="currentView"></component>
+  <v-app>
+    <v-navigation-drawer class="text-white"
+                         color="black"
+                         v-model="drawer">
+      <v-list-item
+          prepend-icon="mdi-home"
+          href="#/"
+          title="Home"
+          @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+          prepend-icon="mdi-information-variant-circle-outline"
+          href="#/RandTask"
+          title="Random Task Selector"
+          @click="drawer = !drawer"
+      ></v-list-item>
+      <v-list-item
+         prepend-icon="mdi-information-variant-circle-outline"
+         href="#/MacroHub"
+         title="Macro-Hub"
+         @click="drawer = !drawer"
+      ></v-list-item>
+    </v-navigation-drawer>
+    <v-app-bar color="black"
+               class="text-white"
+               height="130">
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-title class="text-h1 mainHeader">Home-Helper!</v-app-bar-title>
+    </v-app-bar>
+    <v-main style="background-color: black; color: white;">
+      <component :is="currentView"></component>/
+    </v-main>
+    <v-footer app="false" style="background-color: black; color: white;" >Copyright 2026</v-footer>
+  </v-app>
 </template>
+
+<style scoped>
+.mainHeader {
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
+</style>
+
 
