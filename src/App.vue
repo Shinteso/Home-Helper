@@ -1,11 +1,13 @@
 <script setup>
 import { ref, computed } from 'vue'
 import home from './home.vue'
-import about from './about.vue'
+import macroHub from './macroHub.vue'
+import randTask from "./randTask.vue";
 
 const routes = {
   '/': home,
-  '/about': about
+  '/macroHub': macroHub,
+  '/randTask' : randTask
 }
 
 const currentPath = ref(window.location.hash)
@@ -33,13 +35,13 @@ const currentView = computed(() => {
       ></v-list-item>
       <v-list-item
           prepend-icon="mdi-information-variant-circle-outline"
-          href="#/RandTask"
+          href="#/randTask"
           title="Random Task Selector"
           @click="drawer = !drawer"
       ></v-list-item>
       <v-list-item
          prepend-icon="mdi-information-variant-circle-outline"
-         href="#/MacroHub"
+         href="#/macroHub"
          title="Macro-Hub"
          @click="drawer = !drawer"
       ></v-list-item>
