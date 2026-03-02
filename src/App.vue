@@ -1,11 +1,11 @@
 <script setup>
 import { ref, computed } from 'vue'
 import home from './home.vue'
-import about from './about.vue'
+import MacroHub from './macroHub.vue'
 
 const routes = {
   '/': home,
-  '/about': about
+  '/about': MacroHub
 }
 
 const currentPath = ref(window.location.hash)
@@ -39,7 +39,7 @@ const currentView = computed(() => {
       ></v-list-item>
       <v-list-item
          prepend-icon="mdi-information-variant-circle-outline"
-         href="#/MacroHub"
+         href="#/macroHub"
          title="Macro-Hub"
          @click="drawer = !drawer"
       ></v-list-item>
