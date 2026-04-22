@@ -3,11 +3,13 @@ import { ref, computed } from 'vue'
 import home from './home.vue'
 import macroHub from './macroHub.vue'
 import randTask from "./randTask.vue";
+import revolutionMacro from "@/revolutionMacro.vue";
 
 const routes = {
   '/': home,
   '/macroHub': macroHub,
-  '/randTask' : randTask
+  '/randTask' : randTask,
+  '/revolutionMacro': revolutionMacro,
 }
 
 const currentPath = ref(window.location.hash)
