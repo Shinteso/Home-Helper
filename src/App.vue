@@ -50,7 +50,7 @@ const currentView = computed(() => {
     </v-navigation-drawer>
     <v-app-bar color="black"
                class="text-white"
-               height="130">
+               height="135">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-app-bar-title class="text-h1 mainHeader">Home-Helper!</v-app-bar-title>
     </v-app-bar>
