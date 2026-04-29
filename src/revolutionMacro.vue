@@ -9,6 +9,7 @@ const report = ref(null)
 const loading = ref(true)
 let interval = null
 
+// Fetching all the data from the Api to post onto the page
 async function fetchAll() {
   try {
     const [logsRes, screenshotRes] = await Promise.all([
