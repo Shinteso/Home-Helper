@@ -1,8 +1,9 @@
 # home-helper
 
 
+This is a project for my Junior Year Adv. Web Development Class.
 
-This template should help get you started developing with Vue 3 in Vite.
+Made as a personal website (website link is https://www.lj-enix.com/)
 
 ## Recommended IDE Setup
 

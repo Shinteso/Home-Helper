@@ -68,7 +68,7 @@ function pickRandom() {
 
   let flashes = 0
   const max = 10 + Math.floor(Math.random() * 8)
-  interval = setInterval(() => {
+  const interval = setInterval(() => {
     const idx = Math.floor(Math.random() * tasks.value.length)
     randomTask.value = tasks.value[idx]
     flashes++
