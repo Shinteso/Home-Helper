@@ -2,14 +2,14 @@
 const Macros = [
   {
     title: "Revolution Macro",
-    img: "./public/Revolution_Macro.png",
+    img: "/Revolution_Macro.png",
     description:"Macro for Bee Swarm",
     href: "#/revolutionMacro",
     live: true,
   },
   {
-    title: "UTD Macro",
-    img: "./public/UTD.png",
+    title: "UTD Macro (Not in Service Yet)",
+    img: "/UTD.png",
     description:"Macro for Universal Tower Defense",
     href: "#/null",
     live: false,
@@ -19,7 +19,7 @@ const Macros = [
 
 <template>
   <v-container class="mt-6">
-    <h2 class="text-h5 mb-4">Different Macros (No Live Updates Yet waiting for Webhook Integration)</h2>
+    <h2 class="text-h5 mb-4">Different Macros (With Live Updates)</h2>
     <v-row>
       <v-col
           v-for="item in Macros"
